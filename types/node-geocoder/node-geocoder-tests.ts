@@ -15,7 +15,7 @@ geocoder.geocode('Poland').then((entries) => {
     }
 });
 
-geocoder.geocode('Poland', (err: any, entries) => {
+geocoder.geocode('Poland', (err: any, entries: NodeGeocoder.Entry[]) => {
     console.log(JSON.stringify(entries, null, 2));
 });
 
@@ -25,7 +25,7 @@ geocoder.geocode(query).then((entries) => {
     console.log(JSON.stringify(entries, null, 2));
 });
 
-geocoder.geocode(query, (err: any, entries) => {
+geocoder.geocode(query, (err: any, entries: NodeGeocoder.Entry[]) => {
     console.log(JSON.stringify(entries, null, 2));
 });
 
